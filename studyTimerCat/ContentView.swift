@@ -21,13 +21,22 @@ struct ContentView: View {
         VStack {
             
             Menu  {
+                Menu ("hats"){
+                    Button ("hat one"){
+                    }
+                }
+                Menu ("clothes"){
+                    Button ("clothes one"){
+                    }
+                }
+                Menu ("shoes"){
+                    Button ("shoe one"){
+                    }
+                }
                 Button("Close", role: .destructive){
                 }
-                Button ("closet"){
-                }
-                Button ("add timer"){
-                    
-                }
+
+
             } label: {
                 Label("menu", systemImage: "gearshape.fill")
                 
