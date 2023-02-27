@@ -23,8 +23,7 @@ struct ProgressBar : View {
                 .padding()
                 .foregroundColor(Color.blue.opacity(0.5))
             
-            LinearGradient(gradient: Gradient(colors: colorScheme == .dark ? [Color(red: 173/255, green: 216/255, blue: 230/255), colorScheme == .dark ? Color(red: 255/255, green: 255/255, blue: 255/255): Color.black] : [Color.red, Color.black]), startPoint: .top, endPoint: .bottom)
-                .mask(
+            LinearGradient(gradient: Gradient(colors: colorScheme == .dark ? [Color(red: 255/255, green: 182/255, blue: 193/255), colorScheme == .dark ? Color(red: 255/255, green: 182/255, blue: 193/255): Color.black] : [Color.pink, Color.white]), startPoint: .top, endPoint: .bottom)                .mask(
                 //MASK ADD COLOR TO FORGROUND OFF ALL OBJECTS IN HERE
                 
                 Circle()
