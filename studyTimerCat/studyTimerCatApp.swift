@@ -15,3 +15,7 @@ struct studyTimerCatApp: App {
         }
     }
 }
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    
+}
