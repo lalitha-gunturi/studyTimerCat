@@ -61,7 +61,7 @@ struct ContentView: View {
                         }//alert
                             .font(.system(size: 80, weight: .bold)).opacity(0.80)
                             .padding()
-                            Slider(value: $vm.minutes, in: 1...10, step:1)
+                            Slider(value: $vm.minutes, in: 1...60, step:1)
                                 .padding()
                                 .frame(width:width)
                                 .disabled(vm.isActive)
