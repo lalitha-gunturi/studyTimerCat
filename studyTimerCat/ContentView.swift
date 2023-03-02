@@ -17,7 +17,7 @@ struct ContentView: View {
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 250
     
-    @State private var showstudyView = false
+    @State private var showstudyView = true
     
     var body: some View {
         VStack {
@@ -82,11 +82,10 @@ struct ContentView: View {
                                 Spacer()
                                 //Spacer()
                                 //Spacer()
-                        Button(action: {showstudyView = true}){
-                                    Text("start")
-                            //showstudyView = true
-                                    // vm.start(minutes: vm.minutes)
-                                } //.disabled(vm.isActive)
+                        Button ("Start"){
+                            //(action: { showWelcomeView = true })
+                                    vm.start(minutes: vm.minutes)
+                                } .disabled(vm.isActive)
                                   NavigationLink("", destination: studyView(), isActive: $showstudyView)
                                    // .padding()
                                 //Spacer()
