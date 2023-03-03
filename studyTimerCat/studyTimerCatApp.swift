@@ -11,7 +11,8 @@ import SwiftUI
 struct studyTimerCatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            studyView()
         }
     }
 }
