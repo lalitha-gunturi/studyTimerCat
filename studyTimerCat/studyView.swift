@@ -37,9 +37,11 @@ struct studyView: View {
                 
                 Spacer()
                                       
-            
+                ProgressBar(progress: 50, lineWidth: 15).overlay{
+                         Image("lock")
+                        }
                         
-               // Image("cat2")
+               Image("cat2")
             }
             
         }
