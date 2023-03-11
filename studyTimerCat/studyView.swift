@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct studyView: View {
-    let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
+
+  //  let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
     @StateObject private var vm = ViewModel()
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 250
     
+
+    let skyBlue = Color(red: 0.95, green: 0.85, blue: 1.00)
+
     var body: some View {
        
             
