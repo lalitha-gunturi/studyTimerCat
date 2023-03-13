@@ -52,7 +52,14 @@ struct studyView: View {
                     Spacer()
                     
                     ProgressBar(progress: 50, lineWidth: 15).overlay{
-                        Image("lock")
+                        ZStack {
+                            Image("cat food")
+                            Image("lock")
+                            
+                            
+                        }
+                        
+                        
                     }
                     
                     Image("cat2")

@@ -18,98 +18,118 @@ struct ContentView: View {
     private let width: Double = 250
     
     @State private var showstudyView = true
+    // @State private var showWelcomeView = false
+    
+    let skyBlue = Color(red: 0.95, green: 0.85, blue: 1.00)
     
     var body: some View {
-        VStack {
-            
-            Menu  {
-                Menu ("hats"){
-                    Button ("hat one"){
+        NavigationView {
+            ZStack {
+                skyBlue
+                    .ignoresSafeArea()
+                VStack {
+                    
+                    Menu  {
+                        Menu ("hats"){
+                            Button ("hat one"){
+                            }
+                        }
+                        Menu ("clothes"){
+                            Button ("clothes one"){
+                            }
+                        }
+                        Menu ("shoes"){
+                            Button ("shoe one"){
+                            }
+                        }
+                        Button("Close", role: .destructive){
+                        }
+                        
+                        
+                    } label: {
+                        Label("Menu", systemImage: "gearshape.fill")
+                        
                     }
-                }
-                Menu ("clothes"){
-                    Button ("clothes one"){
-                    }
-                }
-                Menu ("shoes"){
-                    Button ("shoe one"){
-                    }
-                }
-                Button("Close", role: .destructive){
-                }
-
-
-            } label: {
-                Label("menu", systemImage: "gearshape.fill")
-                
-            }
-            //ProgressBar(progress: 50, lineWidth: 15).overlay{
-                
-                VStack{
-                    Text("\(vm.time)")
-                        .font(.system(size: 70, weight: .medium, design: .rounded))
-                        .padding()
+                    //ProgressBar(progress: 50, lineWidth: 15).overlay{
+                    
+                    VStack{
+                        Text("\(vm.time)")
+                            .font(.system(size: 70, weight: .medium, design: .rounded))
+                            .padding()
                         //.frame(width: width)
                         //.background(.thinMaterial)
                         //.cornerRadius(20)
-                        .overlay(RoundedRectangle(cornerRadius:20).stroke(Color.gray, lineWidth:4))
-                    
-                        .alert("Timer done!", isPresented:$vm.showingAlert){
-                            Button("Continue", role: .cancel){
-                                //code
-                                
-                                /*
-                                 Text("start button?")
-                                 Text("\(countDownTimer)").onReceive(timer) { _ in
-                                 if countDownTimer > 0 && timerRunning{
-                                 countDownTimer -= 1
-                                 
-                                 } else{
-                                 timerRunning = false
-                                 }
-                                 */
-                            }//button
-                        }//alert
+                            .overlay(RoundedRectangle(cornerRadius:20).stroke(Color.gray, lineWidth:4))
+                        
+                            .alert("Timer done!", isPresented:$vm.showingAlert){
+                                Button("Continue", role: .cancel){
+                                    //code
+                                    
+                                    /*
+                                     Text("start button?")
+                                     Text("\(countDownTimer)").onReceive(timer) { _ in
+                                     if countDownTimer > 0 && timerRunning{
+                                     countDownTimer -= 1
+                                     
+                                     } else{
+                                     timerRunning = false
+                                     }
+                                     */
+                                }//button
+                            }//alert
                             .font(.system(size: 80, weight: .bold)).opacity(0.80)
                             .padding()
-                            Slider(value: $vm.minutes, in: 1...60, step:1)
-                                .padding()
-                                .frame(width:width)
-                                .disabled(vm.isActive)
-                                .animation(.easeInOut, value: vm.minutes)
-                            
-                    HStack (spacing: 0.0001){
-                                Spacer()
-                                //Spacer()
-                                //Spacer()
-                        Button ("Start"){
+                        Slider(value: $vm.minutes, in: 1...60, step:1)
+                            .padding()
+                            .frame(width:width)
+                            .disabled(vm.isActive)
+                            .animation(.easeInOut, value: vm.minutes)
+                        
+                        HStack (spacing: 0.0001){
+                            //Spacer()
+                            //Spacer()
+                            //Spacer()
+                            //  Button ("Start"){
                             //(action: { showWelcomeView = true })
-                                    vm.start(minutes: vm.minutes)
-                                } .disabled(vm.isActive)
-                                  NavigationLink("", destination: studyView(), isActive: $showstudyView)
-                                   // .padding()
-                                //Spacer()
-                                Button("reset", action:vm.reset)
-                                                   .tint(.red)
-                                                   .frame(width: width)
-                                                               
-                                                            
-                                                        }//HStack
-                                                           .onReceive(timer){ _ in
-                                                               vm.updateCountDown()
-                                                           }//onReceive
-                                
-                                
-                    ProgressBar(progress: 50, lineWidth: 15).overlay{
-                                
-                            } //2nd VStack closer
-                        } //overlay closer
+                            // vm.start(minutes: vm.minutes)
+                            //} .disabled(vm.isActive)
+                            //NavigationLink("", destination: studyView(), isActive: $showstudyView)
+                            // .padding()
+                            //Spacer()
+                            //   Button("reset", action:vm.reset)
+                            //    .tint(.red)
+                            // .frame(width: width)
+                            NavigationLink {
+                                // destination view to navigation to
+                                studyView()
+                            } label: {
+                                Text("Start Timer")
+                                   // .foregroundColor(.gray)
+                            }
+                            
+                        }//HStack
+                        .onReceive(timer){ _ in
+                            vm.updateCountDown()
+                        }//onReceive
+                        
+                        
+                        //ProgressBar(progress: 50, lineWidth: 15).overlay{
+                        Spacer()
+                        Spacer()
+                        HStack {
+                           Spacer()
+                            Spacer()
+                            Image("cat")
+                        }
+                        //Image("cat")
+                        // } //2nd VStack closer
+                    } //overlay closer
                 } //1st Vstack closer
             } //body view closer
-           
             
-        } //content view
-        
+        }
+    } //content view
+}
 
 
 struct ContentView_Previews: PreviewProvider {
