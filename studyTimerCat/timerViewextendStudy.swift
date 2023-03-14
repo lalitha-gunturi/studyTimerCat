@@ -11,7 +11,7 @@ extension studyView{
         @Published var isActive = false
         @Published var showingAlert = false
         @Published var time: String = "60:00"
-        @Published var minutes: Float = 60.0{
+        @Published var minutes: Float = 0.0{
             didSet{
                 self.time = "\(Int(minutes)):00"
             }

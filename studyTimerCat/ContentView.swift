@@ -49,7 +49,7 @@ struct ContentView: View {
                     } label: {
                         Label("Closet", systemImage: "bolt.fill")
                             .labelStyle(.titleOnly)
-                        Image("hanger")
+                        Image("new hnger")
                     }
                     //ProgressBar(progress: 50, lineWidth: 15).overlay{
                     
