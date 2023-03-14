@@ -30,16 +30,16 @@ struct ContentView: View {
                 VStack {
                     
                     Menu  {
-                        Menu ("hats"){
-                            Button ("hat one"){
+                        Menu ("Hats"){
+                            Button ("Top Hat"){
                             }
                         }
-                        Menu ("clothes"){
-                            Button ("clothes one"){
+                        Menu ("Accessories"){
+                            Button ("Bow Tie"){
                             }
                         }
-                        Menu ("shoes"){
-                            Button ("shoe one"){
+                        Menu ("Shoes"){
+                            Button ("High Heels"){
                             }
                         }
                         Button("Close", role: .destructive){
@@ -47,8 +47,9 @@ struct ContentView: View {
                         
                         
                     } label: {
-                        Label("Menu", systemImage: "gearshape.fill")
-                        
+                        Label("Closet", systemImage: "bolt.fill")
+                            .labelStyle(.titleOnly)
+                        Image("hanger")
                     }
                     //ProgressBar(progress: 50, lineWidth: 15).overlay{
                     

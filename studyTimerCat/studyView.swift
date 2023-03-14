@@ -25,24 +25,24 @@ struct studyView: View {
                     .ignoresSafeArea()
                 VStack {
                     Menu  {
-                        Menu ("hats"){
-                            Button ("Top Hat"){
+                        Button ("End Timer") {
+                            
+                        }
+                        Menu ("Add Break"){
+                            Button ("5 Minute Breeak"){
+                            }
+                            Button ("7 Minute Break") {
+                            }
+                            Button ("10 Minute Break"){
                             }
                         }
-                        Menu ("clothes"){
-                            Button ("Pink Shirt"){
-                            }
-                        }
-                        Menu ("shoes"){
-                            Button ("High Heels"){
-                            }
-                        }
+                        
                         Button("Close", role: .destructive){
                         }
                         
                         
                     } label: {
-                        Label("menu", systemImage: "gearshape.fill")
+                        Label("Pause", systemImage: "pause.fill")
                     }
                     VStack{
                         
@@ -53,8 +53,8 @@ struct studyView: View {
                     
                     ProgressBar(progress: 50, lineWidth: 15).overlay{
                         ZStack {
-                            Image("cat food")
-                            Image("lock")
+                            //Image("food smaller")
+                            Image("lock black")
                             
                             
                         }
