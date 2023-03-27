@@ -13,7 +13,7 @@ extension studyView{
         @Published var time: String = "30:00"
         @Published var minutes: Float = 30.0{
             didSet{
-                self.time = "\(Int(minutes)):00" //
+                self.time = "\(Int(minutes)):00" 
             }
         }
         private var initialTime = 0
