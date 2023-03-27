@@ -10,10 +10,10 @@ extension studyView{
     final class ViewModel: ObservableObject{
         @Published var isActive = false
         @Published var showingAlert = false
-        @Published var time: String = "60:00"
-        @Published var minutes: Float = 0.0{
+        @Published var time: String = "30:00"
+        @Published var minutes: Float = 30.0{
             didSet{
-                self.time = "\(Int(minutes)):00"
+                self.time = "\(Int(minutes)):00" //
             }
         }
         private var initialTime = 0
