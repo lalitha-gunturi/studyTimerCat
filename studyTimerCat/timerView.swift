@@ -13,10 +13,10 @@ extension ContentView{
     final class ViewModel: ObservableObject{
         @Published var isActive = false
         @Published var showingAlert = false
-        @Published var time: String = "60:00"
+        @Published var time: String = "60:00" //showing on screen? 
         @Published var minutes: Float = 60.0{
             didSet{
-                self.time = "\(Int(minutes)):00"
+                self.time = "\(Int(minutes)):00" //setting initial time to 60 min
             }
         }
         private var initialTime = 0
