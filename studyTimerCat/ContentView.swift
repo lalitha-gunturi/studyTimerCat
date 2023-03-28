@@ -66,16 +66,6 @@ struct ContentView: View {
                                 Button("Continue", role: .cancel){
                                     //code
                                     
-                                    /*
-                                     Text("start button?")
-                                     Text("\(countDownTimer)").onReceive(timer) { _ in
-                                     if countDownTimer > 0 && timerRunning{
-                                     countDownTimer -= 1
-                                     
-                                     } else{
-                                     timerRunning = false
-                                     }
-                                     */
                                 }//button
                             }//alert
                             .font(.system(size: 80, weight: .bold)).opacity(0.80)
