@@ -18,9 +18,9 @@ extension ContentView{
 
         @Published var time: String = "60:00" // displayed time (the value that is shown in the timer)
 
-        @Published var minutes: Float = 60.0{ //user selected minutes
+        @Published var minutes: Float = 60.0{ //user selected minutes (slider)
             didSet{
-                self.time = "\(Int(minutes)):00" //when user picks time, immediatly update the time
+                self.time = "\(Int(minutes)):00" //when user picks time, immediatly update the time (slider)
             }
         }
         private var initialTime = 0  //Used to keep track of the current time
