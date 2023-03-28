@@ -11,7 +11,7 @@ struct studyView: View {
 
   //  let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
     @StateObject private var vm = ViewModel()
-   private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    private let timing = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 250
     @State var progressValue: Float = 0.0
  //   @State var timer= Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -52,7 +52,7 @@ struct studyView: View {
                             .padding()
                     Spacer()
                     
-                        ProgressBar(progress: $progressValue, timer: $timer)
+                        ProgressBar(progress: 50, timer: 88)
                         ZStack {
                             //Image("food smaller")
                             Image("lock black")
