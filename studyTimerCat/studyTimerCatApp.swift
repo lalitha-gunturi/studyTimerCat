@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct studyTimerCatApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    //@UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -18,6 +18,7 @@ struct studyTimerCatApp: App {
     }
 }
 
+/*
 class AppDelegate: NSObject, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
@@ -26,3 +27,4 @@ class AppDelegate: NSObject, UIApplicationDelegate {
       //  viewControllerWithYourFunction.sendLocation()
     }
 }
+*/
