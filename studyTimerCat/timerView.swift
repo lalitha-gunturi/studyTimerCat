@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension ContentView{
+extension studyView{
     final class ViewModel: ObservableObject{
         @Published var isActive = false
         @Published var showingAlert = false

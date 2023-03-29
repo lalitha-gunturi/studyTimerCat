@@ -5,17 +5,37 @@
 //  Created by Sophia Lin on 3/9/23.
 //
 
+
+//NOTE: this extends content view NOT study view!!!!
 import Foundation
-extension studyView{
+extension ContentView{
     final class ViewModel: ObservableObject{
         @Published var isActive = false
         @Published var showingAlert = false
         @Published var time: String = "30:00"
         @Published var minutes: Float = 30.0{
             didSet{
-                self.time = "\(Int(minutes)):00" 
+                time = "\(Int(minutes)):00"
+                //need to put this var on other page
+                
             }
+            
+            
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         private var initialTime = 0
         private var endDate = Date()
         
@@ -57,4 +77,5 @@ extension studyView{
         }
     }
 }
+
 

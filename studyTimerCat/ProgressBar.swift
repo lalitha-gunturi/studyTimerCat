@@ -13,7 +13,7 @@ struct ProgressBar : View {
     var progress : Float
     //@Binding var progress : Float
    // @Binding var timer : Float
-    var timer : Float
+   // var timer : Float
     var lineWidth: Int = 30
     
     @Environment(\.colorScheme) var colorScheme: ColorScheme
@@ -48,7 +48,7 @@ struct ProgressBar : View {
 struct ProgressBar_Preview: PreviewProvider {
     static var previews: some View {
         //ProgressBar(progress: Binding.constant(50), timer: Binding.constant(88), lineWidth: 20)
-        ProgressBar(progress: 50, timer: 88, lineWidth: 20)
+        ProgressBar(progress: 50, lineWidth: 15)
     } //previews view closer
 } //progress bar preview closer
 

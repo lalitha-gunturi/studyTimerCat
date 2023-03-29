@@ -18,7 +18,6 @@ struct ContentView: View {
     private let width: Double = 250
     
     @State private var showstudyView = true
-    // @State private var showWelcomeView = false
     
     let skyBlue = Color(red: 0.95, green: 0.85, blue: 1.00)
     
@@ -77,9 +76,7 @@ struct ContentView: View {
                             .animation(.easeInOut, value: vm.minutes)
                         
                         HStack (spacing: 0.0001){
-                            //Spacer()
-                            //Spacer()
-                            //Spacer()
+
                             //  Button ("Start"){
                             //(action: { showWelcomeView = true })
                             // vm.start(minutes: vm.minutes)
@@ -90,18 +87,19 @@ struct ContentView: View {
                             //   Button("reset", action:vm.reset)
                             //    .tint(.red)
                             // .frame(width: width)
+                           
+                            //DO STUFF HERE
                             NavigationLink {
-                                // destination view to navigation to
                                 studyView()
                             } label: {
                                 Text("Start Timer")
-                                   // .foregroundColor(.gray)
+                                
                             }
                             
                         }//HStack
                         .onReceive(timer){ _ in
                             vm.updateCountDown()
-                        }//onReceive
+                        }//onReceive closer
                         
                         
                         //ProgressBar(progress: 50, lineWidth: 15).overlay{
@@ -112,7 +110,7 @@ struct ContentView: View {
                             Spacer()
                             Image("cat")
                         }
-                        //Image("cat")
+
                         // } //2nd VStack closer
                     } //overlay closer
                 } //1st Vstack closer
