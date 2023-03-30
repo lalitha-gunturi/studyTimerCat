@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var countDownTimer = 10
     @State var timerRunning = true
+    @State var catImage = "cat"
     
     @State var progressValue: Float = 0.0
     
@@ -34,7 +35,9 @@ struct ContentView: View {
                             }
                         }
                         Menu ("Accessories"){
-                            Button ("Bow Tie"){
+                            Button ("collar"){
+                                catImage = "collar on cat"
+                               
                             }
                         }
                         Menu ("Shoes"){
@@ -108,7 +111,7 @@ struct ContentView: View {
                         HStack {
                            Spacer()
                             Spacer()
-                            Image("cat")
+                            Image(catImage)
                         }
 
                         // } //2nd VStack closer
