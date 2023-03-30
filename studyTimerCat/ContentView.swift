@@ -13,8 +13,8 @@ struct ContentView: View {
     
     @State var progressValue: Float = 0.0
     
-    @StateObject private var vm = ViewModel()
-    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @StateObject var vm = ViewModel()
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 250
     
     @State private var showstudyView = true
@@ -97,8 +97,8 @@ struct ContentView: View {
                             }
                             
                         }//HStack
-                        .onReceive(timer){ _ in
-                            vm.updateCountDown()
+                       // .onReceive(timer){ _ in
+                           // vm.updateCountDown()
                         }//onReceive closer
                         
                         
@@ -118,7 +118,7 @@ struct ContentView: View {
             
         }
     } //content view
-}
+
 
 
 struct ContentView_Previews: PreviewProvider {
