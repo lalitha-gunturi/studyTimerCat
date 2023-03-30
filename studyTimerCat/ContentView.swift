@@ -32,16 +32,31 @@ struct ContentView: View {
                     Menu  {
                         Menu ("Hats"){
                             Button ("Top Hat"){
+                                if catImage == "hat on cat"{
+                                    catImage = "cat"
+                                }else{
+                                    catImage = "hat on cat"
+                                }
                             }
                         }
                         Menu ("Accessories"){
                             Button ("collar"){
-                                catImage = "collar on cat"
+                                if catImage == "collar on cat"{
+                                    catImage = "cat"
+                                } else {
+                                    catImage = "collar on cat"
+                                }
                                
                             }
                         }
                         Menu ("Shoes"){
-                            Button ("High Heels"){
+                            Button ("Boots"){
+                                if
+                                    catImage == "boots on cat" {
+                                    catImage = "cat"
+                                } else {
+                                    catImage = "boots on cat"
+                                }
                             }
                         }
                         Button("Close", role: .destructive){
