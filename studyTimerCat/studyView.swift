@@ -24,8 +24,6 @@ struct studyView: View {
     
 
     var body: some View {
-       
-            
             ZStack{
                 skyBlue
                     .ignoresSafeArea()
@@ -61,7 +59,12 @@ struct studyView: View {
                         }
                         .disabled(vm.isActive)
                         }
-                        
+                    .onReceive(timer) { _ in
+                        vm.updateCountDown()
+                    }
+                    //^^This is how the timer sets.
+                    
+                    
                             //don't need a reset button
                             //   Button("reset", action:vm.reset)
                             //    .tint(.red)
