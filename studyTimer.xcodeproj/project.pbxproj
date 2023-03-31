@@ -53,7 +53,7 @@
 		A1C3974429A514FF00B0A3E6 /* studyTimerCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyTimerCatUITests.swift; sourceTree = "<group>"; };
 		A1C3974629A514FF00B0A3E6 /* studyTimerCatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyTimerCatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1C3975329A5157300B0A3E6 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		A1C3975529A515C600B0A3E6 /* timerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerView.swift; sourceTree = "<group>"; };
+		A1C3975529A515C600B0A3E6 /* timerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		A1C3975729A515F000B0A3E6 /* NotificationAppExit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAppExit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -437,7 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"studyTimerCat/Preview Content\"";
-				DEVELOPMENT_TEAM = Z7AU2GYDHS;
+				DEVELOPMENT_TEAM = 883DK65VTV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -477,7 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"studyTimerCat/Preview Content\"";
-				DEVELOPMENT_TEAM = Z7AU2GYDHS;
+				DEVELOPMENT_TEAM = 883DK65VTV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
