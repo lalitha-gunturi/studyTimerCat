@@ -41,15 +41,15 @@
 /* Begin PBXFileReference section */
 		6367B73929BA31900085C240 /* timerViewextendStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewextendStudy.swift; sourceTree = "<group>"; };
 		A142DAA829B0EF2400870134 /* studyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyView.swift; sourceTree = "<group>"; };
-		A1C3972529A514FD00B0A3E6 /* ariphia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ariphia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C3972529A514FD00B0A3E6 /* studyTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3972829A514FD00B0A3E6 /* studyTimerCatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyTimerCatApp.swift; sourceTree = "<group>"; };
 		A1C3972A29A514FD00B0A3E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		A1C3972C29A514FF00B0A3E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1C3972E29A514FF00B0A3E6 /* studyTimerCat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = studyTimerCat.entitlements; sourceTree = "<group>"; };
 		A1C3973029A514FF00B0A3E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1C3973629A514FF00B0A3E6 /* ariphiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ariphiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C3973629A514FF00B0A3E6 /* studyTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studyTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3973A29A514FF00B0A3E6 /* studyTimerCatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyTimerCatTests.swift; sourceTree = "<group>"; };
-		A1C3974029A514FF00B0A3E6 /* ariphiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ariphiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C3974029A514FF00B0A3E6 /* studyTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studyTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C3974429A514FF00B0A3E6 /* studyTimerCatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyTimerCatUITests.swift; sourceTree = "<group>"; };
 		A1C3974629A514FF00B0A3E6 /* studyTimerCatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyTimerCatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1C3975329A5157300B0A3E6 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
@@ -95,9 +95,9 @@
 		A1C3972629A514FD00B0A3E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1C3972529A514FD00B0A3E6 /* ariphia.app */,
-				A1C3973629A514FF00B0A3E6 /* ariphiaTests.xctest */,
-				A1C3974029A514FF00B0A3E6 /* ariphiaUITests.xctest */,
+				A1C3972529A514FD00B0A3E6 /* studyTimer.app */,
+				A1C3973629A514FF00B0A3E6 /* studyTimerTests.xctest */,
+				A1C3974029A514FF00B0A3E6 /* studyTimerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1C3972429A514FD00B0A3E6 /* ariphia */ = {
+		A1C3972429A514FD00B0A3E6 /* studyTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1C3974A29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "ariphia" */;
+			buildConfigurationList = A1C3974A29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "studyTimer" */;
 			buildPhases = (
 				A1C3972129A514FD00B0A3E6 /* Sources */,
 				A1C3972229A514FD00B0A3E6 /* Frameworks */,
@@ -159,14 +159,14 @@
 			);
 			dependencies = (
 			);
-			name = ariphia;
+			name = studyTimer;
 			productName = studyTimerCat;
-			productReference = A1C3972529A514FD00B0A3E6 /* ariphia.app */;
+			productReference = A1C3972529A514FD00B0A3E6 /* studyTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A1C3973529A514FF00B0A3E6 /* ariphiaTests */ = {
+		A1C3973529A514FF00B0A3E6 /* studyTimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1C3974D29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "ariphiaTests" */;
+			buildConfigurationList = A1C3974D29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "studyTimerTests" */;
 			buildPhases = (
 				A1C3973229A514FF00B0A3E6 /* Sources */,
 				A1C3973329A514FF00B0A3E6 /* Frameworks */,
@@ -177,14 +177,14 @@
 			dependencies = (
 				A1C3973829A514FF00B0A3E6 /* PBXTargetDependency */,
 			);
-			name = ariphiaTests;
+			name = studyTimerTests;
 			productName = studyTimerCatTests;
-			productReference = A1C3973629A514FF00B0A3E6 /* ariphiaTests.xctest */;
+			productReference = A1C3973629A514FF00B0A3E6 /* studyTimerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A1C3973F29A514FF00B0A3E6 /* ariphiaUITests */ = {
+		A1C3973F29A514FF00B0A3E6 /* studyTimerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1C3975029A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "ariphiaUITests" */;
+			buildConfigurationList = A1C3975029A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "studyTimerUITests" */;
 			buildPhases = (
 				A1C3973C29A514FF00B0A3E6 /* Sources */,
 				A1C3973D29A514FF00B0A3E6 /* Frameworks */,
@@ -195,9 +195,9 @@
 			dependencies = (
 				A1C3974229A514FF00B0A3E6 /* PBXTargetDependency */,
 			);
-			name = ariphiaUITests;
+			name = studyTimerUITests;
 			productName = studyTimerCatUITests;
-			productReference = A1C3974029A514FF00B0A3E6 /* ariphiaUITests.xctest */;
+			productReference = A1C3974029A514FF00B0A3E6 /* studyTimerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +223,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A1C3972029A514FD00B0A3E6 /* Build configuration list for PBXProject "ariphia" */;
+			buildConfigurationList = A1C3972029A514FD00B0A3E6 /* Build configuration list for PBXProject "studyTimer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -236,9 +236,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1C3972429A514FD00B0A3E6 /* ariphia */,
-				A1C3973529A514FF00B0A3E6 /* ariphiaTests */,
-				A1C3973F29A514FF00B0A3E6 /* ariphiaUITests */,
+				A1C3972429A514FD00B0A3E6 /* studyTimer */,
+				A1C3973529A514FF00B0A3E6 /* studyTimerTests */,
+				A1C3973F29A514FF00B0A3E6 /* studyTimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,12 +306,12 @@
 /* Begin PBXTargetDependency section */
 		A1C3973829A514FF00B0A3E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A1C3972429A514FD00B0A3E6 /* ariphia */;
+			target = A1C3972429A514FD00B0A3E6 /* studyTimer */;
 			targetProxy = A1C3973729A514FF00B0A3E6 /* PBXContainerItemProxy */;
 		};
 		A1C3974229A514FF00B0A3E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A1C3972429A514FD00B0A3E6 /* ariphia */;
+			target = A1C3972429A514FD00B0A3E6 /* studyTimer */;
 			targetProxy = A1C3974129A514FF00B0A3E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -524,7 +524,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ariphia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ariphia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studyTimer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/studyTimer";
 			};
 			name = Debug;
 		};
@@ -546,7 +546,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ariphia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ariphia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studyTimer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/studyTimer";
 			};
 			name = Release;
 		};
@@ -595,7 +595,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1C3972029A514FD00B0A3E6 /* Build configuration list for PBXProject "ariphia" */ = {
+		A1C3972029A514FD00B0A3E6 /* Build configuration list for PBXProject "studyTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C3974829A514FF00B0A3E6 /* Debug */,
@@ -604,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1C3974A29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "ariphia" */ = {
+		A1C3974A29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "studyTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C3974B29A514FF00B0A3E6 /* Debug */,
@@ -613,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1C3974D29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "ariphiaTests" */ = {
+		A1C3974D29A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "studyTimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C3974E29A514FF00B0A3E6 /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1C3975029A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "ariphiaUITests" */ = {
+		A1C3975029A514FF00B0A3E6 /* Build configuration list for PBXNativeTarget "studyTimerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1C3975129A514FF00B0A3E6 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1C3972429A514FD00B0A3E6"
-               BuildableName = "ariphia.app"
-               BlueprintName = "ariphia"
-               ReferencedContainer = "container:ariphia.xcodeproj">
+               BuildableName = "studyTimer.app"
+               BlueprintName = "studyTimer"
+               ReferencedContainer = "container:studyTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1C3973529A514FF00B0A3E6"
-               BuildableName = "ariphiaTests.xctest"
-               BlueprintName = "ariphiaTests"
-               ReferencedContainer = "container:ariphia.xcodeproj">
+               BuildableName = "studyTimerTests.xctest"
+               BlueprintName = "studyTimerTests"
+               ReferencedContainer = "container:studyTimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,9 +45,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A1C3973F29A514FF00B0A3E6"
-               BuildableName = "ariphiaUITests.xctest"
-               BlueprintName = "ariphiaUITests"
-               ReferencedContainer = "container:ariphia.xcodeproj">
+               BuildableName = "studyTimerUITests.xctest"
+               BlueprintName = "studyTimerUITests"
+               ReferencedContainer = "container:studyTimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1C3972429A514FD00B0A3E6"
-            BuildableName = "ariphia.app"
-            BlueprintName = "ariphia"
-            ReferencedContainer = "container:ariphia.xcodeproj">
+            BuildableName = "studyTimer.app"
+            BlueprintName = "studyTimer"
+            ReferencedContainer = "container:studyTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1C3972429A514FD00B0A3E6"
-            BuildableName = "ariphia.app"
-            BlueprintName = "ariphia"
-            ReferencedContainer = "container:ariphia.xcodeproj">
+            BuildableName = "studyTimer.app"
+            BlueprintName = "studyTimer"
+            ReferencedContainer = "container:studyTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
