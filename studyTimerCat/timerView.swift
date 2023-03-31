@@ -14,8 +14,6 @@ extension studyView{
         @Published var isActive = false
         @Published var showingAlert = false
 
-     
-
         @Published var time: String = "60:00" // displayed time (the value that is shown in the timer)
 
         @Published var minutes: Float = 60.0{ //user selected minutes (slider)
