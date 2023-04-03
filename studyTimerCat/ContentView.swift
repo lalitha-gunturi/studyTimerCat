@@ -53,7 +53,11 @@ struct ContentView: View {
                             Button ("Boots"){
                                 if
                                     catImage == "boots on cat" {
-                                    catImage = "cat"
+                                        
+                                        catImage = "cat"
+                                        
+                                    
+                                    
                                 } else {
                                     catImage = "boots on cat"
                                 }
@@ -127,6 +131,8 @@ struct ContentView: View {
                            Spacer()
                             Spacer()
                             Image(catImage)
+                                .resizable()
+                                .scaledToFit()
                         }
 
                         // } //2nd VStack closer
