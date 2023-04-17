@@ -32,21 +32,48 @@ struct ContentView: View {
                     Menu  {
                         Menu ("Hats"){
                             Button ("Top Hat"){
-                                if catImage == "hat on cat"{
+                                if catImage == "top hat on cat"{
                                     catImage = "cat"
                                 }else{
-                                    catImage = "hat on cat"
+                                    catImage = "top hat on cat"
+                                }
+                            }
+                            Button ("Beanie"){
+                                if catImage == "beanie on cat"{
+                                    catImage = "cat"
+                                }else{
+                                    catImage = "beanie on cat"
+                                }
+                            }
+                            Button ("Cowboy Hat"){
+                                if catImage == "cowboy hat on cat"{
+                                    catImage = "cat"
+                                }else{
+                                    catImage = "cowboy hat on cat"
                                 }
                             }
                         }
                         Menu ("Accessories"){
-                            Button ("collar"){
+                            Button ("Collar"){
                                 if catImage == "collar on cat"{
                                     catImage = "cat"
                                 } else {
                                     catImage = "collar on cat"
                                 }
-                               
+                            }
+                            Button ("Bowtie"){
+                                if catImage == "bowtie on cat"{
+                                    catImage = "cat"
+                                } else {
+                                    catImage = "bowtie on cat"
+                                }
+                            }
+                            Button ("Glasses"){
+                                if catImage == "glasses on cat"{
+                                    catImage = "cat"
+                                } else {
+                                    catImage = "glasses on cat"
+                                }
                             }
                         }
                         Menu ("Shoes"){
