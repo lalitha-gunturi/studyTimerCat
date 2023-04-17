@@ -80,13 +80,23 @@ struct ContentView: View {
                             Button ("Boots"){
                                 if
                                     catImage == "boots on cat" {
-                                        
                                         catImage = "cat"
-                                        
-                                    
-                                    
                                 } else {
                                     catImage = "boots on cat"
+                                }
+                            }
+                            Button ("Socks"){
+                                if catImage == "socks on cat"{
+                                    catImage = "cat"
+                                } else {
+                                    catImage = "socks on cat"
+                                }
+                            }
+                            Button ("Ballet Shoes"){
+                                if catImage == "ballet shoes on cat"{
+                                    catImage = "cat"
+                                } else {
+                                    catImage = "ballet shoes on cat"
                                 }
                             }
                         }
