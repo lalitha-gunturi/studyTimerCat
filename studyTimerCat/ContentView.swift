@@ -28,7 +28,12 @@ struct ContentView: View {
                 skyBlue
                     .ignoresSafeArea()
                 VStack {
-                    
+                    NavigationLink {
+                        TaskContentView()
+                    } label: {
+                        Text("Tasks")
+                        
+                    }
                     Menu  {
                         Menu ("Hats"){
                             Button ("Top Hat"){
