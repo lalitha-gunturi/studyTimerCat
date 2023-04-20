@@ -12,9 +12,12 @@ struct TaskContentView: View {
      
     
     @State var items: [ItemModel ] = [
-        ItemModel(title: "This is first title", isComplated: false),
-        ItemModel(title: "This is second title", isComplated: true),
-        ItemModel(title: "Third", isComplated: false)
+        ItemModel(title: "Click Edit to reorder tasks/prioritize them and delete taks", isComplated: true),
+        ItemModel(title: "Task 1: Finish math homework", isComplated: true),
+        ItemModel(title: "Task 2: Do the Laundry", isComplated: true),
+        ItemModel(title: "Task 3: Order AP Books", isComplated: true),
+        ItemModel(title: "Task 4: Clean my room" , isComplated: true),
+        ItemModel(title: "Task 5: Walk the Dog", isComplated: true)
     ]
     
     var body: some View {
