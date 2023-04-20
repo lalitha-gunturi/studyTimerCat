@@ -31,9 +31,13 @@ struct ContentView: View {
                     NavigationLink {
                         TaskContentView()
                     } label: {
-                        Text("Tasks")
+                        Text("Todo List") //,systemImage: //"bolt.fill")
+                        //    .labelStyle(.titleOnly)
+                       // Image("todolist")
+                            
                         
                     }
+                    
                     Menu  {
                         Menu ("Hats"){
                             Button ("Top Hat"){
