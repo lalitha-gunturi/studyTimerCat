@@ -11,13 +11,16 @@ struct TaskContentView: View {
      
      
     
-    @State var items: [String ] = [
-    "Click add to add tasks"]
+    @State var items: [ItemModel ] = [
+        ItemModel(title: "This is first title", isComplated: false),
+        ItemModel(title: "This is second title", isComplated: true),
+        ItemModel(title: "Third", isComplated: false)
+    ]
     
     var body: some View {
         List {
-            ForEach(items, id: \.self) { item in
-                ListRowView(title: item)
+            ForEach(items) { item in
+                ListRowView(item: item)
             }
             .onDelete (perform: deleteItem)
             .onMove(perform: moveItem)
