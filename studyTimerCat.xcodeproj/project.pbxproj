@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E9753EE29F0F1F100FCAFA9 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9753ED29F0F1F100FCAFA9 /* ListRowView.swift */; };
+		1E9753F029F0F7A000FCAFA9 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9753EF29F0F7A000FCAFA9 /* AddView.swift */; };
 		6367B73A29BA31900085C240 /* timerViewextendStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367B73929BA31900085C240 /* timerViewextendStudy.swift */; };
 		96FB5E8229F04E9700C31E3D /* TaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB5E8129F04E9700C31E3D /* TaskContentView.swift */; };
 		A142DAA929B0EF2400870134 /* studyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A142DAA829B0EF2400870134 /* studyView.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E9753ED29F0F1F100FCAFA9 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		1E9753EF29F0F7A000FCAFA9 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		6367B73929BA31900085C240 /* timerViewextendStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewextendStudy.swift; sourceTree = "<group>"; };
 		96FB5E8129F04E9700C31E3D /* TaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskContentView.swift; sourceTree = "<group>"; };
 		A142DAA829B0EF2400870134 /* studyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studyView.swift; sourceTree = "<group>"; };
@@ -107,8 +111,10 @@
 			children = (
 				A1C3972829A514FD00B0A3E6 /* studyTimerCatApp.swift */,
 				A142DAA829B0EF2400870134 /* studyView.swift */,
+				1E9753EF29F0F7A000FCAFA9 /* AddView.swift */,
 				A1C3972A29A514FD00B0A3E6 /* ContentView.swift */,
 				96FB5E8129F04E9700C31E3D /* TaskContentView.swift */,
+				1E9753ED29F0F1F100FCAFA9 /* ListRowView.swift */,
 				A1C3975329A5157300B0A3E6 /* ProgressBar.swift */,
 				A1C3975529A515C600B0A3E6 /* timerView.swift */,
 				6367B73929BA31900085C240 /* timerViewextendStudy.swift */,
@@ -276,7 +282,9 @@
 			files = (
 				6367B73A29BA31900085C240 /* timerViewextendStudy.swift in Sources */,
 				A1C3972B29A514FD00B0A3E6 /* ContentView.swift in Sources */,
+				1E9753F029F0F7A000FCAFA9 /* AddView.swift in Sources */,
 				A1C3975429A5157300B0A3E6 /* ProgressBar.swift in Sources */,
+				1E9753EE29F0F1F100FCAFA9 /* ListRowView.swift in Sources */,
 				96FB5E8229F04E9700C31E3D /* TaskContentView.swift in Sources */,
 				A1C3975629A515C600B0A3E6 /* timerView.swift in Sources */,
 				A142DAA929B0EF2400870134 /* studyView.swift in Sources */,
