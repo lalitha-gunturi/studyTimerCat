@@ -31,9 +31,9 @@ struct ContentView: View {
                     NavigationLink {
                         TaskContentView()
                     } label: {
-                        Text("Todo List") //,systemImage: //"bolt.fill")
-                        //    .labelStyle(.titleOnly)
-                       // Image("todolist")
+                        Label("Todo List", systemImage: "bolt.fill")
+                            .labelStyle(.titleOnly)
+                        Image("todolist1")
                             
                         
                     }
@@ -116,7 +116,7 @@ struct ContentView: View {
                     } label: {
                         Label("Closet", systemImage: "bolt.fill")
                             .labelStyle(.titleOnly)
-                        Image("new hnger")
+                        Image("closetwhite1")
                     }
                     //ProgressBar(progress: 50, lineWidth: 15).overlay{
                     
