@@ -31,7 +31,7 @@ struct ContentView: View {
                     NavigationLink {
                         TaskContentView()
                     } label: {
-                        Label("Todo List", systemImage: "bolt.fill")
+                        Label("",systemImage: "bolt.fill")
                             .labelStyle(.titleOnly)
                         Image("todolist1")
                             
@@ -114,7 +114,7 @@ struct ContentView: View {
                         
                         
                     } label: {
-                        Label("Closet", systemImage: "bolt.fill")
+                        Label("", systemImage: "bolt.fill")
                             .labelStyle(.titleOnly)
                         Image("closetwhite1")
                     }
