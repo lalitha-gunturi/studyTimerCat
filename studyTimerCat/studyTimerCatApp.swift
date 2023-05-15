@@ -14,6 +14,7 @@ struct studyTimerCatApp: App {
         WindowGroup {
             ContentView()
             //studyView()
+            //view
         }
     }
 }
