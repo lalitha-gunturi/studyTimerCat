@@ -33,7 +33,7 @@ struct ContentView: View {
                     } label: {
                         Label("",systemImage: "bolt.fill")
                             .labelStyle(.titleOnly)
-                        Image("todolist1")
+                        Image("purple todolist")
                             
                         
                     }
@@ -116,7 +116,7 @@ struct ContentView: View {
                     } label: {
                         Label("", systemImage: "bolt.fill")
                             .labelStyle(.titleOnly)
-                        Image("closetwhite1")
+                        Image("purple closet")
                     }
                     //ProgressBar(progress: 50, lineWidth: 15).overlay{
                     
