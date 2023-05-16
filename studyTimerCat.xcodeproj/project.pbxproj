@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E9753EE29F0F1F100FCAFA9 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9753ED29F0F1F100FCAFA9 /* ListRowView.swift */; };
 		1E9753F029F0F7A000FCAFA9 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9753EF29F0F7A000FCAFA9 /* AddView.swift */; };
+		1EA6F23A2A13BEFB00BA51EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA6F2392A13BEFB00BA51EC /* LaunchScreen.storyboard */; };
 		1EDD661D29F1065F00D34977 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD661C29F1065F00D34977 /* ItemModel.swift */; };
 		6367B73A29BA31900085C240 /* timerViewextendStudy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6367B73929BA31900085C240 /* timerViewextendStudy.swift */; };
 		96FB5E8229F04E9700C31E3D /* TaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB5E8129F04E9700C31E3D /* TaskContentView.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1E9753ED29F0F1F100FCAFA9 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		1E9753EF29F0F7A000FCAFA9 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		1EA6F2392A13BEFB00BA51EC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EDD661C29F1065F00D34977 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		6367B73929BA31900085C240 /* timerViewextendStudy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewextendStudy.swift; sourceTree = "<group>"; };
 		96FB5E8129F04E9700C31E3D /* TaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		A1C3971C29A514FD00B0A3E6 = {
 			isa = PBXGroup;
 			children = (
+				1EA6F2392A13BEFB00BA51EC /* LaunchScreen.storyboard */,
 				A1C3972729A514FD00B0A3E6 /* studyTimerCat */,
 				A1C3973929A514FF00B0A3E6 /* studyTimerCatTests */,
 				A1C3974329A514FF00B0A3E6 /* studyTimerCatUITests */,
@@ -257,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA6F23A2A13BEFB00BA51EC /* LaunchScreen.storyboard in Resources */,
 				A1C3973129A514FF00B0A3E6 /* Preview Assets.xcassets in Resources */,
 				A1C3972D29A514FF00B0A3E6 /* Assets.xcassets in Resources */,
 			);
