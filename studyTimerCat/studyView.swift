@@ -72,11 +72,10 @@ struct studyView: View {
                         
                     Spacer()
                     
-                        ProgressBar(progress: 50, lineWidth: 15)
+                        
                         //progress bar needs to be fixed 
                         ZStack {
-                            //Image("food smaller")
-                            Image("lock black")
+                            
                             
                             
                         
@@ -84,7 +83,7 @@ struct studyView: View {
                         
                     }//2nd zstack
                     
-                    Image("cat2")
+                    
                 }//2nd vstack
             
             }//1st vstack
