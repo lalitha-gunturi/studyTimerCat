@@ -35,83 +35,26 @@ struct ContentView: View {
                         Label("",systemImage: "bolt.fill")
                             .labelStyle(.titleOnly)
                         Image("purple todolist")
-                            
+                        
                         
                     }
                     
                     Menu  {
-                        Menu ("Hats"){
-                            Button ("Top Hat"){
-                                if catImage == "top hat on cat"{
-                                    catImage = "cat"
-                                }else{
-                                    catImage = "top hat on cat"
-                                }
-                            }
-                            Button ("Beanie"){
-                                if catImage == "beanie on cat"{
-                                    catImage = "cat"
-                                }else{
-                                    catImage = "beanie on cat"
-                                }
-                            }
-                            Button ("Cowboy Hat"){
-                                if catImage == "cowboy hat on cat"{
-                                    catImage = "cat"
-                                }else{
-                                    catImage = "cowboy hat on cat"
-                                }
-                            }
+                        
+                        Button ("hiking outfit"){
+                            catImage = "cat hiking outfit"
                         }
-                        Menu ("Accessories"){
-                            Button ("Collar"){
-                                if catImage == "collar on cat"{
-                                    catImage = "cat"
-                                } else {
-                                    catImage = "collar on cat"
-                                }
-                            }
-                            Button ("Bowtie"){
-                                if catImage == "bowtie on cat"{
-                                    catImage = "cat"
-                                } else {
-                                    catImage = "bowtie on cat"
-                                }
-                            }
-                            Button ("Glasses"){
-                                if catImage == "glasses on cat"{
-                                    catImage = "cat"
-                                } else {
-                                    catImage = "glasses on cat"
-                                }
-                            }
+                        Button ("winter outfit"){
+                            catImage = "cat winter outfit"
                         }
-                        Menu ("Shoes"){
-                            Button ("Boots"){
-                                if
-                                    catImage == "boots on cat" {
-                                        catImage = "cat"
-                                } else {
-                                    catImage = "boots on cat"
-                                }
-                            }
-                            Button ("Socks"){
-                                if catImage == "socks on cat"{
-                                    catImage = "cat"
-                                } else {
-                                    catImage = "socks on cat"
-                                }
-                            }
-                            Button ("Ballet Shoes"){
-                                if catImage == "ballet shoes on cat"{
-                                    catImage = "cat"
-                                } else {
-                                    catImage = "ballet shoes on cat"
-                                }
-                            }
+                        Button ("business outfit"){
+                            catImage = "cat business outfit"
                         }
-                        Button("Close", role: .destructive){
-                        }
+                    
+                    
+                    Button("Close", role: .destructive){
+                    }
+                
                         
                         
                     } label: {
