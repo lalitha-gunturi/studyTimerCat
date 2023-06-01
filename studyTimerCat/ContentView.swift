@@ -5,7 +5,6 @@
 //  Created by 90309356 on 2/3/23.
 
 //
-//
 import SwiftUI
 
 struct ContentView: View {
@@ -15,7 +14,9 @@ struct ContentView: View {
     
     @State var progressValue: Float = 0.0
     
-    @StateObject var vm = ViewModel()
+    let backgroundColor = Color("Background")
+    let darkerPurple = Color("DarkerPurple")
+    
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     private let width: Double = 250
     
@@ -26,122 +27,84 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                skyBlue
+                backgroundColor
                     .ignoresSafeArea()
+                Spacer()
                 VStack {
-                    NavigationLink {
-                        TaskContentView()
-                    } label: {
-                        Label("",systemImage: "bolt.fill")
-                            .labelStyle(.titleOnly)
-                        Image("purple todolist")
-                        
-                        
-                    }
-                    
-                    Menu  {
-                        
-                        Button ("hiking outfit"){
-                            catImage = "cat hiking outfit"
+                    HStack {
+                        NavigationLink {
+                            TaskContentView()
+                        } label: {
+                            Label("", systemImage: "bolt.fill")
+                                .labelStyle(.titleOnly)
+                            Text("Tasks")
+                                .frame(width: 90, height: 40)
+                                .background(darkerPurple)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
                         }
-                        Button ("winter outfit"){
-                            catImage = "cat winter outfit"
-                        }
-                        Button ("business outfit"){
-                            catImage = "cat business outfit"
-                        }
-                    
-                    
-                    Button("Close", role: .destructive){
-                    }
-                
                         
-                        
-                    } label: {
-                        Label("", systemImage: "bolt.fill")
-                            .labelStyle(.titleOnly)
-                        Image("purple closet")
-                    }
-                    //ProgressBar(progress: 50, lineWidth: 15).overlay{
-                    
-                    VStack{
-                        Text("\(vm.time)")
-                            .font(.system(size: 70, weight: .medium, design: .rounded))
-                            .padding()
-                        //.frame(width: width)
-                        //.background(.thinMaterial)
-                        //.cornerRadius(20)
-                            .overlay(RoundedRectangle(cornerRadius:20).stroke(Color.gray, lineWidth:4))
-                        
-                            .alert("Timer done!", isPresented:$vm.showingAlert){
-                                Button("Continue", role: .cancel){
-                                    //code
-                                    
-                                }//button
-                            }//alert
-                            .font(.system(size: 80, weight: .bold)).opacity(0.80)
-                            .padding()
-                        Slider(value: $vm.minutes, in: 1...60, step:1)
-                            .padding()
-                            .frame(width:width)
-                            .disabled(vm.isActive)
-                            .animation(.easeInOut, value: vm.minutes)
-                        
-                        HStack (spacing: 0.0001){
-
-                            //  Button ("Start"){
-                            //(action: { showWelcomeView = true })
-                            // vm.start(minutes: vm.minutes)
-                            //} .disabled(vm.isActive)
-                            //NavigationLink("", destination: studyView(), isActive: $showstudyView)
-                            // .padding()
-                            //Spacer()
-                            //   Button("reset", action:vm.reset)
-                            //    .tint(.red)
-                            // .frame(width: width)
-                           
-                            //DO STUFF HERE
-                            NavigationLink {
-                                studyView()
-                            } label: {
-                                Text("Start Studying!!")
-                                
+                        Menu {
+                            Button("hiking outfit") {
+                                catImage = "cat hiking outfit"
                             }
-                            
-                        }//HStack
-                       // .onReceive(timer){ _ in
-                           // vm.updateCountDown()
-                        }//onReceive closer
+                            Button("winter outfit") {
+                                catImage = "cat winter outfit"
+                            }
+                            Button("business outfit") {
+                                catImage = "cat business outfit"
+                            }
+                            Button("Close", role: .destructive) {
+                            }
+                        } label: {
+                            Label("", systemImage: "bolt.fill")
+                                .labelStyle(.titleOnly)
+                            Text("Closet")
+                                .frame(width: 90, height: 40)
+                                .background(darkerPurple)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
+                    }
+                    .padding(.bottom, 0) // Lower the buttons
+                    
+                    VStack {
+                        NavigationLink(destination: studyView()) {
+                            Text("Start Studying!!")
+                                .frame(width: 250, height: 50)
+                                .background(darkerPurple)
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                        }
+                        .padding(.top, 8) // Lower the button
+                        
+                        Image("title2")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 360, height: 360) // Adjust the size of the "title" asset
                         
                         
-                        //ProgressBar(progress: 50, lineWidth: 15).overlay{
-                        Spacer()
-                        Spacer()
                         HStack {
-                           Spacer()
-                            Spacer()
+                            
+                            
                             Image(catImage)
                                 .resizable()
                                 .scaledToFit()
+                                .frame(width: 290, height: 290) // Adjust the size of the cat image
+                            
+                            
                         }
-
-                        // } //2nd VStack closer
-                    } //overlay closer
-                } //1st Vstack closer
-            } //body view closer
-            
+                        .frame(maxWidth: .infinity) // Center the cat image horizontally
+                    }
+                }
+            }
         }
-    } //content view
-
-
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    } //previews view vloser
-} //content view previews closer
-    
-            
-        
-    
+    }
+}
 
