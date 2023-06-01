@@ -104,7 +104,7 @@ struct ContentView: View {
                             NavigationLink {
                                 studyView()
                             } label: {
-                                Text("Start Timer")
+                                Text("Start Studying!!")
                                 
                             }
                             
