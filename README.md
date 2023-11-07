@@ -18,6 +18,6 @@ Study Cat understands that every student has unique study preferences. That's wh
 - Unlock new outfits for your study buddy when you reach your study goals!
 - Daily Motivational Quote and Study Tip!
 
-### The Study Cat team strongly beleives in colloboration and new ideas. If you would like to help with app development and coding, reach out to us at lalithap.gunturi@gmail.com
+### The Study Cat team strongly believes in collaboration and new ideas. If you would like to help with app development and coding, reach out to us at lalithap.gunturi@gmail.com ! We will be doing updates and coding more features starting Jan 2024 in the ADV iOS App Development course.
 
 We hope Study Cat helps you unleash your full potential and turn studying into a delightful adventure. Remember, with Study Cat by your side, every study session is a step closer to achieving your goals. Happy studying!
